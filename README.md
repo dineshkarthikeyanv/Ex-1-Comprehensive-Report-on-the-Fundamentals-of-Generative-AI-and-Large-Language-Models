@@ -1,14 +1,23 @@
 Prompt-Engineering-Experiments-1
+
 Name : DINESHKARTHIKEYAN V
+
 Register No : 212225230060
+
 Date : 21.04.2026
+
 Aim: Comprehensive Report on the Fundamentals of Generative AI and Large Language Models (LLMs)
+
 Experiment: Develop a comprehensive report for the following exercises:
 
 Explain the foundational concepts of Generative AI.
+
 Focusing on Generative AI architectures. (like transformers).
+
 Generative AI applications.
+
 Generative AI impact of scaling in LLMs.
+
 Algorithm: Step 1: Define Scope and Objectives
 1.1 Identify the goal of the report (e.g., educational, research, tech overview) 1.2 Set the target audience level (e.g., students, professionals) 1.3 Draft a list of core topics to cover Step 2: Create Report Skeleton/Structure 2.1 Title Page 2.2 Abstract or Executive Summary 2.3 Table of Contents 2.4 Introduction 2.5 Main Body Sections: • Introduction to AI and Machine Learning • What is Generative AI? • Types of Generative AI Models (e.g., GANs, VAEs, Diffusion Models) • Introduction to Large Language Models (LLMs) • Architecture of LLMs (e.g., Transformer, GPT, BERT) • Training Process and Data Requirements • Use Cases and Applications (Chatbots, Content Generation, etc.) • Limitations and Ethical Considerations • Future Trends 2.6 Conclusion 2.7 References
 
@@ -27,16 +36,29 @@ Introduction
 Generative AI refers to systems capable of creating text, images, audio, and code by learning patterns from large datasets. These systems power applications across industries, enabling automation, creative content generation, and intelligent decision-making. This report covers foundational concepts,architectures, scaling impacts, and how Large Language Models (LLMs) are built.
 
 Foundational Concepts of Generative AI
+
 Generative AI is built on machine learning principles where models learn statistical patterns from training data and generate new, realistic outputs. Core concepts include: • Neural Networks: Layers of interconnected nodes that learn representations of data through training. • Training & Optimization: Model weights are adjusted by minimizing a loss function using gradient descent and backpropagation. • Embeddings: Numerical vector representations that capture the semantic meaning of words, images, or other inputs. • Attention Mechanism: Allows the model to focus on the most relevant parts of input data when generating output. • Latent Space: A compressed internal representation that encodes key features of input data for generation. • Generalization: The ability to perform well on new, unseen data after training on a large corpus. • Transfer Learning: Pre-trained models can be fine-tuned for specific tasks with minimal extra data.
 
 Generative AI Architecture and Its Applications Generative AI architecture is the design framework that defines how data flows through a model, how patterns are learned, and how new content is generated. It includes layers, algorithms, and training mechanisms that together simulate creativity. Figure 1: Generative AI Architecture and Its Applications The diagram above illustrates the full pipeline: raw data enters the Input Layer, is converted to vectors in the Embedding Layer, patterns are extracted in the Hidden Layers via attention mechanisms, compressed in the optional Latent Space, and finally new content is produced in the Output Layer. Applications span text generation (chatbots, translation), image generation (art, medical imaging), audio (voice assistants, music), software development (code generation), and healthcare (drug discovery).
 image
+
+<img width="1042" height="607" alt="image" src="https://github.com/user-attachments/assets/2db5f719-9a30-4047-8f03-813cdbe3054d" />
+
+
 Generative AI Architectures (Like Transformers) Modern Generative AI relies on several architectural families. Transformers are the dominant architecture today, especially for language tasks. They use self -attention to process all input tokens in parallel and capture long-range dependencies efficiently. Figure 2: Generative AI Architectures – Transformer, GAN, VAE, Diffusion Models Transformer Key Features • Self-Attention: Understands relationships between all words in the input simultaneously. • Multi-Head Attention: Captures multiple different aspects of meaning in parallel. • Positional Encoding: Preserves the order of tokens in the sequence. • Parallel Processing: Trains faster than older recurrent architectures. • Encoder-Decoder Structure: Encoder understands the input; Decoder generates the output.
-{E4C3F40A-FBF7-4610-9FA3-079435165ED9}
+
+
+<img width="1030" height="473" alt="image" src="https://github.com/user-attachments/assets/3b5f4e49-4866-4bfc-825f-435a210974e6" />
+
+
+
 Four Major Generative AI Architecture Types
+
 Figure 3: Transformer, GAN, VAE, and Diffusion Model Architectures with Applications Architecture How It Works Applications Transformer Uses self -attention to process tokens in parallel; encoder understands input, decoder generates output. Chatbots, translation, code generation, summarization (GPT, BERT) GAN Generator creates fake data; Discriminator distinguishes real vs. fake; both improve adversarially. Image synthesis, deepfakes, style transfer, super-resolution VAE Encoder compresses input to latent space; Decoder reconstructs or generates new similar data. Image reconstruction, anomaly detection, data compression Diffusion Model Gradually adds noise to data, then learns to reverse the process step-bystep to produce clean output. High-quality image generation, art creation, video synthesis
 
-image
+<img width="1036" height="597" alt="image" src="https://github.com/user-attachments/assets/2421ee1d-7a93-4c2a-94bf-58400eac408b" />
+
+
 Applications of Generative AI
 Generative AI has broad real-world applications spanning multiple domains, as shown in the architecture diagrams above:
 
@@ -67,7 +89,9 @@ Generative AI has broad real-world applications spanning multiple domains, as sh
 Impact of Scaling in Large Language Models
 Scaling refers to increasing three key dimensions of a model: model size (number of parameters), training data volume and diversity, and compute power (hardware and training duration). As each dimension grows, model capabilities improve substantially. Figure 4: Impact of Scaling in LLMs – Model Size, Data, Compute and Their Effects The diagram above shows how scaling from small (~10M–100M parameters, GBs of text, few GPUs) to very large scale (100B+ parameters, PBs of text, thousands of GPUs) leads to better performance, emergent abilities, better generalization, and longer context understanding.
 
-image
+<img width="995" height="597" alt="image" src="https://github.com/user-attachments/assets/71702993-fe40-4e0a-8580-5c7aa6779af3" />
+
+
 Key Impacts and Challenges of Scaling
 8.1 Key Impacts
 
@@ -84,7 +108,9 @@ Scaling Factor Small Scale Medium Scale Large Scale Very Large Model Size 10M–
 Large Language Models (LLMs) – How They Work and Are Built
 A Large Language Model is an AI system trained on massive text corpora that understands language, generates coherent text, and predicts the next word (token) in a sequence. Examples include ChatGPT, Llama, Gemini, and Claude. Figure 5: LLM Architecture, How It Generates Text, and How It Is Built Step-by-Step The diagram above shows: (1) What an LLM is, (2) its simplified architecture from tokenization through transformer blocks to output, (3) how it generates text autoregressively, (4) the 7-step build pipeline, (5) the transformer block internals with multi-head attention, (6) key features, (7) applications, (8) advantages and limitations, and (10) a complete example workflow.
 
-image
+<img width="1012" height="665" alt="image" src="https://github.com/user-attachments/assets/b63df83f-9e67-479c-a214-8f8b678f9327" />
+
+
 LLM Build Pipeline and Conclusion
 10.1 How an LLM Is Built – Step by Step Step Stage Description Goal 1 Data Collection Gather huge amounts of text f rom books, websites, articles, and code. Diverse knowledge base 2 Preprocessing Clean text, remove noise, handle duplicates, prepare training data. High-quality data 3 Tokenization Convert text into tokens (words/subwords/characters) for the model. Machine-readable input 4 Pre-training Train the model using transformer architecture to predict next token. Learn patterns & context 5 Fine-Tuning Train on specif ic datasets for particular tasks (chat, code, etc.). Task performance 6 RLHF Use human feedback with Reinforcement Learning to align the model. Safety & quality 7 Deployment Optimize and deploy the model for realworld access. User access
 
